@@ -67,12 +67,12 @@ $errorMessage = '&nbsp;';
             <td class="content"><input name="txtPaymentAddress2" type="text" class="box" id="txtPaymentAddress2" size="50" maxlength="100"></td>
         </tr>
         <tr> 
-            <td width="150" class="label">Phone Number</td>
-            <td class="content"><input name="txtPaymentPhone" type="text" class="box" id="txtPaymentPhone" size="30" maxlength="32"></td>
-        </tr>
-        <tr> 
             <td width="150" class="label">District</td>
             <td class="content"><input name="txtPaymentDistrict" type="text" class="box" id="txtPaymentDistrict" size="30" maxlength="32"></td>
+        </tr>
+        <tr> 
+            <td width="150" class="label">Phone Number</td>
+            <td class="content"><input name="txtPaymentPhone" type="text" class="box" id="txtPaymentPhone" size="30" maxlength="32"></td>
         </tr>
 	</table>
 
