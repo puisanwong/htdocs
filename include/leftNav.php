@@ -65,9 +65,9 @@ foreach ($categories as $category) {
 <li><a href="<?php echo $_SERVER['PHP_SELF']; ?>register.php">Member Restration</a></li>
 
 <li>
-     <a href="<?php echo WEB_ROOT; ?>admin/fb/login-facebook.php/" >Share with Friends</a>
+     <a href="<?php echo WEB_ROOT; ?>admin/fb/login-facebook.php" >Share with Friends</a>
 </li>
-<li><a href="<?php echo WEB_ROOT; ?>admin/index.php">Admin Login</a></li>
+<li><a href="<?php echo WEB_ROOT; ?>admin/main.php">Admin Login</a></li>
 <li>
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
 </li>
