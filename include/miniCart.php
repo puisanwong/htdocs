@@ -44,7 +44,9 @@ if ($numItem > 0) {
   <tr>
   <td colspan="2" align="center"><a href="cart.php?action=view"> Go To Shopping 
    Cart</a></td>
- </tr>  
+ </tr>   
+
+
 <?php	
 } else {
 ?>
@@ -52,4 +54,10 @@ if ($numItem > 0) {
 <?php
 }
 ?> 
+
+  <tr>
+  <td colspan="2" align="center"><p align="center"><object width="250" height="200"><param name="movie" value="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3"></param>
+	<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3" type="application/x-shockwave-flash" width="250" height="200" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
+</td>
+ </tr>  
 </table>

@@ -62,18 +62,14 @@ foreach ($categories as $category) {
 }
 ?>
 
-<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>">Member Restration</a></li>
+<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>register.php">Member Restration</a></li>
+
 <li>
      <a href="<?php echo WEB_ROOT; ?>admin/fb/login-facebook.php/" >Share with Friends</a>
 </li>
-<li><a href="<?php echo WEB_ROOT; ?>admin/login.php/>">Admin Login</a></li>
+<li><a href="<?php echo WEB_ROOT; ?>admin/index.php\">Admin Login</a></li>
 <li>
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
-</li>
-
-
-<li><p align="center"><object width="250" height="200"><param name="movie" value="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3"></param>
-	<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3" type="application/x-shockwave-flash" width="250" height="200" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
 </li>
 
 </ul>

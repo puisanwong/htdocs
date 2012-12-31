@@ -2,7 +2,7 @@
 	font-family: "Courier New", Courier, mono;
 	font-size: 14px;
 	color: #FFFFFF;
-	background-color: #7F92A4;
+	background-color: #3366FF;
 	font-weight: bold;
 	background-position: center;
 }
@@ -11,7 +11,7 @@
 	font-family: "Courier New", Courier, mono;
 	font-size: 14px;
 	color: #FFFFFF;
-	background-color: #7F92A4;
+	background-color: #3366FF;
 	font-weight: bold;
 	background-position: center;
 }
@@ -20,7 +20,7 @@
 	font-family: "Courier New", Courier, mono;
 	font-size: 14px;
 	color: #FFFFFF;
-	background-color: #7F92A4;
+	background-color: #3366FF;
 	font-weight: bold;
 	background-position: center;
 }
@@ -194,7 +194,7 @@ a.bottomNav:hover {
 	border-top-color: #666666;
 	border-right-color: #666666;
 	border-left-color: #666666;
-	background-color: #97C1E7;
+	background-color: #3366FF;
 }
 
 .tabSelected:hover {
@@ -203,7 +203,7 @@ a.bottomNav:hover {
 	font-weight: normal;
 	color: #000000;
 	text-decoration: underline;
-	background-color: #97C1E7;
+	background-color: #3366FF;
 }
 
 .tabNotSelected {

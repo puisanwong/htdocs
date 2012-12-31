@@ -24,7 +24,7 @@ for ($i = 0; $i < $n; $i++) {
 <body>
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="1" class="graybox">
   <tr>
-    <td colspan="2"><img src="<?php echo WEB_ROOT; ?>admin/include/banner-top.gif" width="750" height="75"></td>
+    <td colspan="2"><img src="<?php echo WEB_ROOT; ?>admin/include/banner-top.gif" width="750" height="150"></td>
   </tr>
   <tr>
     <td width="150" valign="top" class="navArea"><p>&nbsp;</p>
@@ -53,6 +53,6 @@ require_once $content;
   </tr>
 </table>
 <p>&nbsp;</p>
-<p align="center">Copyright &copy; 2005 - <?php echo date('Y'); ?> <a href="http://www.phpwebcommerce.com"> www.phpwebcommerce.com</a></p>
+<p align="center">Copyright &copy; 2005 - <?php echo date('Y'); ?> <a href="http://www.polyu.edu.hk"> http://www.polyu.edu.hk</a></p>
 </body>
 </html>

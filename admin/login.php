@@ -22,7 +22,7 @@ if (isset($_POST['txtUserName'])) {
 <body>
 <table width="750" border="0" align="center" cellpadding="0" cellspacing="1" class="graybox">
  <tr> 
-  <td><img src="include/banner-top.gif" width="750" height="75"></td>
+  <td><img src="include/banner-top.gif" width="750" height="150"></td>
  </tr>
  <tr> 
   <td valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="20">
