@@ -70,6 +70,7 @@ foreach ($categories as $category) {
 <li><a href="<?php echo WEB_ROOT; ?>admin/index.php">Admin Login</a></li>
 <li>
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
+<button>Submitt</button>
 </li>
 
 </ul>
