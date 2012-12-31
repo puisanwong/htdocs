@@ -35,12 +35,12 @@ $errorMessage = '&nbsp;';
             <td class="content"><input name="txtShippingAddress2" type="text" class="box" id="txtShippingAddress2" size="50" maxlength="100"></td>
         </tr>
         <tr> 
-            <td width="150" class="label">Phone Number</td>
-            <td class="content"><input name="txtShippingPhone" type="text" class="box" id="txtShippingPhone" size="30" maxlength="32"></td>
-        </tr>
-        <tr> 
             <td width="150" class="label">District</td>
             <td class="content"><input name="txtShippingDistrict" type="text" class="box" id="txtShippingDistrict" size="30" maxlength="32"></td>
+        </tr>
+        <tr> 
+            <td width="150" class="label">Phone Number</td>
+            <td class="content"><input name="txtShippingPhone" type="text" class="box" id="txtShippingPhone" size="30" maxlength="32"></td>
         </tr>
     </table>
     <p>&nbsp;</p>
