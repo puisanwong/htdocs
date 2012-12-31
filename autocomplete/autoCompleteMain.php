@@ -1,7 +1,7 @@
 <?php
-$host="127.0.0.1"; // Host name
-$username="root"; // Mysql username
-$password=""; // Mysql password
+$host="instance35319.db.xeround.com:3874"; // Host name
+$username="comp320"; // Mysql username
+$password="comp320"; // Mysql password
 $db_name="phpwebco_shop"; // Database name
 
 
