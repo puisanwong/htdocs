@@ -34,34 +34,10 @@ $cartContent = getCartContent();
 </table>
 <p id="errorMessage"><?php echo $errorMessage; ?></p>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>?step=3" method="post" name="frmCheckout" id="frmCheckout">
-<?php 
-if ($_POST['optPayment'] == 'paypal') {
-?>
-    <table width="550" border="0" align="center" cellpadding="10" cellspacing="0">
-        <tr> 
-            <td align="center"><strong>:: IMPORTANT NOTE :: </strong></td>
-        </tr>
-        <tr> 
-            <td><p>Before clicking the &quot;Confirm Order&quot; button open a 
-                    new browser window and go to <a href="https://developer.paypal.com" target="_blank">https://developer.paypal.com</a> 
-                    then login using this username and password :<br>
-                    Email : armanpi@phpwebcommerce.com<br>
-                    Password : phpwebco<br>
-                    <br>
-                    After you click on the &quot;Confirm Order&quot; button below 
-                    you will be redirected to paypal website. On the paypal checkout 
-                    page use these info to login and complete the checkout process 
-                    :<br>
-                    Email : testme@phpwebcommerce.com <br>
-                    Password : phpwebco </p>
-                <p>By the way, please don't change the password or delete the 
-                    test email okay :-)</p></td>
-        </tr>
-    </table>
-    <p>&nbsp;</p>
-<?php
-}
-?>
+
+//<?php
+//}
+//?>
     <table width="550" border="0" align="center" cellpadding="5" cellspacing="1" class="infoTable">
         <tr class="infoTableHeader"> 
             <td colspan="3">Ordered Item</td>

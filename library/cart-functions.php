@@ -128,7 +128,7 @@ function updateCart()
 	$numDeleted = 0;
 	$notice     = '';
 	
-	for ($i = 0; $i < $numItem; $i++) {
+	for ((int)$i = 0; $i < $numItem; $i++) {
 		$newQty = (int)$itemQty[$i];
 		if ($newQty < 1) {
 			// remove this item from shopping cart
@@ -148,7 +148,7 @@ function updateCart()
 
 				// if the customer put more than
 				// we have in stock, give a notice
-				if ($row['pd_qty'] > 0) {
+				if ($row['pd_qty'] > $newQty) {
 					setError('The quantity you have requested is more than we currently have in stock. The number available is indicated in the &quot;Quantity&quot; box. ');
 				} else {
 					// the product is no longer in stock
@@ -169,13 +169,13 @@ function updateCart()
 		}
 	}
 	
-	if ($numDeleted == $numItem) {
+	//if ($numDeleted == $numItem) {
 		// if all item deleted return to the last page that
 		// the customer visited before going to shopping cart
-		header("Location: $returnUrl" . $_SESSION['shop_return_url']);
-	} else {
-		header('Location: cart.php');	
-	}
+		//header("Location: $returnUrl" . $_SESSION['shop_return_url']);
+	//} else {
+	//	header('Location: cart.php');	
+	//}
 	
 	exit;
 }

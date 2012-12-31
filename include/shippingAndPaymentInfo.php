@@ -81,8 +81,6 @@ $errorMessage = '&nbsp;';
       <tr>
         <td width="150" class="entryTableHeader">Payment Method </td>
         <td class="content">
-        <input name="optPayment" type="radio" id="optPaypal" value="paypal" checked="checked" />
-        <label for="optPaypal" style="cursor:pointer">Paypal</label>
         <input name="optPayment" type="radio" value="cod" id="optCod" />
         <label for="optCod" style="cursor:pointer">Cash on Delivery</label></td>
       </tr>
