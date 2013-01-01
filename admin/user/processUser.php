@@ -51,7 +51,7 @@ function addUser()
 		header('Location: index.php?view=add&error=' . urlencode('Username already taken. Choose another one'));	
 	} else {			
 		$sql   = "INSERT INTO tbl_user (user_name, user_password, user_regdate)
-		          VALUES ('$userName', PASSWORD('$password'), NOW())";
+		          VALUES ('$userName', '$password', NOW())";
 	
 		dbQuery($sql);
 		header('Location: index.php');	
@@ -67,7 +67,7 @@ function modifyUser()
 	$password = $_POST['txtPassword'];
 	
 	$sql   = "UPDATE tbl_user 
-	          SET user_password = PASSWORD('$password')
+	          SET user_password = '$password'
 			  WHERE user_id = $userId";
 
 	dbQuery($sql);
