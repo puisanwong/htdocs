@@ -1,11 +1,10 @@
 <?php
-
-if (array_key_exists("logout", $_GET)) {
-    session_start();
-    unset($_SESSION['id']);
-    unset($_SESSION['username']);
-    unset($_SESSION['oauth_provider']);
-    session_destroy();
-    header("location: home.php");
-}
+session_start();
+unset($_SESSION['user']);
+unset($_SESSION['id']);
+unset($_SESSION['fb_501886946523321_code']);
+unset($_SESSION['fb_501886946523321_access_token']);
+unset($_SESSION['fb_501886946523321_user_id']);
+header("Location:index.php");
+exit;
 ?>

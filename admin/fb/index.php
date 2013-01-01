@@ -1,43 +1,80 @@
 <?php
-//Always place this code at the top of the Page
 session_start();
-if (isset($_SESSION['id'])) {
-    // Redirection to login page twitter or facebook
-    header("location: home.php");
-}
-
-if (array_key_exists("login", $_GET)) {
-    $oauth_provider = $_GET['oauth_provider'];
-    if ($oauth_provider == 'twitter') {
-        header("Location: login-twitter.php");
-    } else if ($oauth_provider == 'facebook') {
-        header("Location: login-facebook.php");
-    }
-}
+include "common.php";
+include_once "fbconnect.php";
 ?>
-<title>OnlineWebApplication Facebook | Twitter Login</title>
-<style type="text/css">
-    #buttons
-	{
-	text-align:center
-	}
-    #buttons img,
-    #buttons a img
-    { border: none;}
-	h1
-	{
-	font-family:Arial, Helvetica, sans-serif;
-	color:#999999;
-	}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <title>Facebook Connect Demo | ArtAtm.com</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Scrollbar Visibility with jScrollPane and jQuery - Hide and show the scrollbar on demand" />
+        <meta name="keywords" content="scrollbar, hide, hover, show, visibility, jscrollpane, jquery, facebook" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	
-</style>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+	<div class="container">
 
+          <div class="top" >
+          
+          <div style="width:900px; margin:auto;">
+         <div style="float:left;"><img src="../fb/images/facebook.jpg" /></div>  <div style="float:right; padding:6px 0 0 0; color:#D8DFEA;">
+<?php				
+if (isset($_SESSION['user'])) echo '<a href="logout.php">Logout</h5></a>';
+else echo '<a href="' . $loginUrl . '">Login</a>';
+?>
+</div> 
+          </div>  
+    </div>
+			
+            <div class="wrapper">
+              <div id="container-area" class="container-area">
+			    <div class="container-area_p">
+				  <div>
+                  
+                <div style="float:left;">  
 
-
-<div id="buttons">
-<h1>Twitter Facebook Login </h1>
-    <a href="?login&oauth_provider=twitter"><img src="images/tw_login.png"></a>&nbsp;&nbsp;&nbsp;
-    <a href="?login&oauth_provider=facebook"><img src="images/fb_login.png"></a> <br />
-	<br />
-	<a href="http://onlinewebapplication.com/">http://onlinewebapplication.com/</a>   
+<?php if(!isset($_SESSION['user'])) { ?>
+<div id="f-connect-button"><a href='<?php echo $loginUrl ?>'><img src="../fb/images/f-connect.png" alt="Connect to your Facebook Account"/></a></div>
+<?php } else { ?>
+<?php
+mysqlc();
+$email = GetSQLValueString($_SESSION['user'], "text");
+$query = sprintf("SELECT * FROM newmember WHERE email = %s",$email);
+$res = mysql_query($query) or die('Query failed: ' . mysql_error() . "<br />\n$sql");
+$row = mysql_fetch_array($res);
+?> </div>
+			<div style="float:left; margin-left:20px;">	<h1><?php echo($row['name']);?></h1>
+				<div class="profile-info"></br>
+					<?php
+				echo "<b>   GENDER : </b>" . $row['gender'];
+				echo "<br/><b>   EMAIL : </b>" . $row['email'];
+				if($row['bio'] != "")
+					echo "<br/><b>   BIO : </b>" . $row['bio'];
+				else
+					echo "<br/><b>   BIO : </b>You have probably not specified your About Me on Facebook! Specifying you might help you get more friends";
+				?>				
+				</div><div class="clr"></div>
+		<?php } ?>	</div>
+	</div><div class="clr"></div>
 </div>
+                  
+              </div>
+		  </div>
+                    
+                    
+                   
+    </div>
+				<div class="clr"></div>
+		  </div>
+		</div>
+</body>
+</html>
