@@ -26,8 +26,8 @@ function saveOrder()
 		
 		// save order & get order id
 		$sql = "INSERT INTO tbl_order(od_date, od_last_update, od_shipping_first_name, od_shipping_last_name, od_shipping_address1, 
-		                              od_shipping_address2, od_shipping_phone, od_shipping_cost,
-                                      od_payment_first_name, od_payment_last_name, od_payment_address1, od_payment_address2, 
+		                              od_shipping_address2, od_shipping_phone, od_shipping_cost, od_payment_first_name, 
+		                              od_payment_last_name, od_payment_address1, od_payment_address2, 
 									  od_payment_phone)
                 VALUES (NOW(), NOW(), '$hidShippingFirstName', '$hidShippingLastName', '$hidShippingAddress1', 
 				        '$hidShippingAddress2', '$hidShippingPhone', '$shippingCost',
