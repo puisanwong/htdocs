@@ -4,7 +4,7 @@ Line 1 : Make sure this file is included instead of requested directly
 Line 2 : Check if step is defined and the value is two
 Line 3 : The POST request must come from this page but the value of step is one
 */
-/*
+
 if (!defined('WEB_ROOT')
     || !isset($_GET['step']) || (int)$_GET['step'] != 2
 	|| $_SERVER['HTTP_REFERER'] != 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '?step=1') {
@@ -16,7 +16,7 @@ $errorMessage = '&nbsp;';
 /*
  Make sure all the required field exist is $_POST and the value is not empty
  Note: txtShippingAddress2 and txtPaymentAddress2 are optional
-
+*/
 $requiredField = array('txtShippingFirstName', 'txtShippingLastName', 'txtShippingAddress1', 'txtShippingPhone', 'txtShippingDistrict', 'txtPaymentFirstName', 'txtPaymentLastName', 'txtPaymentAddress1', 'txtPaymentPhone', 'txtPaymentDistrict');
 					   
 if (!checkRequiredPost($requiredField)) {
@@ -27,7 +27,7 @@ if (!checkRequiredPost($requiredField)) {
 $cartContent = getCartContent();
 
 ?>
-*/
+
 <table width="550" border="0" align="center" cellpadding="10" cellspacing="0">
     <tr> 
         <td>Step 2 Of 3 : Confirm Order </td>
