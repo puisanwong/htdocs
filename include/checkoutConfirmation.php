@@ -16,7 +16,8 @@ $errorMessage = '&nbsp;';
  Make sure all the required field exist is $_POST and the value is not empty
  Note: txtShippingAddress2 and txtPaymentAddress2 are optional
 */
-$requiredField = array('txtShippingFirstName', 'txtShippingLastName', 'txtShippingAddress1', 'txtShippingPhone', 'txtShippingDistrict', 'txtPaymentFirstName', 'txtPaymentLastName', 'txtPaymentAddress1', 'txtPaymentPhone', 'txtPaymentDistrict');
+$requiredField = array('txtShippingFirstName', 'txtShippingLastName', 'txtShippingAddress1', 'txtShippingPhone', 'txtShippingDistrict',
+                       'txtPaymentFirstName', 'txtPaymentLastName', 'txtPaymentAddress1', 'txtPaymentPhone', 'txtPaymentDistrict');
 					   
 if (!checkRequiredPost($requiredField)) {
 	$errorMessage = 'Input not complete';
@@ -34,7 +35,9 @@ $cartContent = getCartContent();
 <p id="errorMessage"><?php echo $errorMessage; ?></p>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>?step=3" method="post" name="frmCheckout" id="frmCheckout">
 
-
+//<?php
+//}
+//?>
     <table width="550" border="0" align="center" cellpadding="5" cellspacing="1" class="infoTable">
         <tr class="infoTableHeader"> 
             <td colspan="3">Ordered Item</td>
@@ -44,10 +47,10 @@ $cartContent = getCartContent();
             <td>Unit Price</td>
             <td>Total</td>
         </tr>
-<?php
-	$numItem  = count($cartContent);
-	$subTotal = 0;
-	for ($i = 0; $i < $numItem; $i++) {
+        <?php
+$numItem  = count($cartContent);
+$subTotal = 0;
+for ($i = 0; $i < $numItem; $i++) {
 	extract($cartContent[$i]);
 	$subTotal += $pd_price * $ct_qty;
 ?>
@@ -56,7 +59,10 @@ $cartContent = getCartContent();
             <td align="right"><?php echo displayAmount($pd_price); ?></td>
             <td align="right"><?php echo displayAmount($ct_qty * $pd_price); ?></td>
         </tr>
-	<tr class="content"> 
+        <?php
+}
+?>
+        <tr class="content"> 
             <td colspan="2" align="right">Sub-total</td>
             <td align="right"><?php echo displayAmount($subTotal); ?></td>
         </tr>
