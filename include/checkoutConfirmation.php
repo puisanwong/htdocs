@@ -7,7 +7,7 @@ Line 3 : The POST request must come from this page but the value of step is one
 
 if (!defined('WEB_ROOT')
     || !isset($_GET['step']) || (int)$_GET['step'] != 2
-	|| $_SERVER['HTTP_REFERER'] != 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '?step=1') {
+	/*|| $_SERVER['HTTP_REFERER'] != 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '?step=1'*/) {
 	exit;
 }
 
