@@ -16,8 +16,7 @@ $errorMessage = '&nbsp;';
  Make sure all the required field exist is $_POST and the value is not empty
  Note: txtShippingAddress2 and txtPaymentAddress2 are optional
 */
-$requiredField = array('txtShippingFirstName', 'txtShippingLastName', 'txtShippingAddress1', 'txtShippingPhone', 'txtShippingDistrict',
-                       'txtPaymentFirstName', 'txtPaymentLastName', 'txtPaymentAddress1', 'txtPaymentPhone', 'txtPaymentDistrict');
+$requiredField = array('txtShippingFirstName', 'txtShippingLastName', 'txtShippingAddress1', 'txtShippingPhone', 'txtShippingDistrict', 'txtPaymentFirstName', 'txtPaymentLastName', 'txtPaymentAddress1', 'txtPaymentPhone', 'txtPaymentDistrict');
 					   
 if (!checkRequiredPost($requiredField)) {
 	$errorMessage = 'Input not complete';
@@ -35,9 +34,7 @@ $cartContent = getCartContent();
 <p id="errorMessage"><?php echo $errorMessage; ?></p>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>?step=3" method="post" name="frmCheckout" id="frmCheckout">
 
-//<?php
-//}
-//?>
+
     <table width="550" border="0" align="center" cellpadding="5" cellspacing="1" class="infoTable">
         <tr class="infoTableHeader"> 
             <td colspan="3">Ordered Item</td>
