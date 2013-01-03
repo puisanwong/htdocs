@@ -7,9 +7,9 @@ error_reporting(E_ALL);
 session_start();
 
 // database connection config
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
+$dbHost = 'int.instance35319.db.xeround.com:3874';
+$dbUser = 'comp320';
+$dbPass = 'comp320';
 $dbName = 'phpwebco_shop';
 
 // setting up the web root and server root for
