@@ -11,7 +11,7 @@ $numItem = count($cartContent);
  <?php
 if ($numItem > 0) {
 ?>
- <tr style="background-color:blue;color:white;">
+ <tr style="background-color:blue;color:white;font-size:16px;">
   <th colspan="2" align="center" >Cart Content</th>
  </tr>
 <?php
@@ -23,7 +23,7 @@ if ($numItem > 0) {
 		
 		$subTotal += $pd_price * $ct_qty;
 ?>
- <tr style="font-size:14px;font-weight:bold;">
+ <tr>
    <td><a href="<?php echo $url; ?>"><?php echo $pd_name; ?></a></td>
    
   <td width="30%" align="right"><?php echo displayAmount($ct_qty * $pd_price); ?></td>
@@ -31,16 +31,16 @@ if ($numItem > 0) {
 <?php
 	} // end while
 ?>
-  <tr style="font-size:18px;"><td align="right">Sub-total : </td>
+  <tr style="font-size:14px;"><td align="right">Sub-total : </td>
   <td width="30%" align="right"><?php echo displayAmount($subTotal); ?></td>
  </tr>
-  <tr><td align="right">Delivery Fee : </td>
+  <tr style="font-size:14px;"><td align="right">Delivery Fee : </td>
   <td width="30%" align="right"><?php echo displayAmount($shopConfig['shippingCost']); ?></td>
  </tr>
-  <tr><td align="right">Total : </td>
+  <tr style="font-size:14px;"><td align="right">Total : </td>
   <td width="30%" align="right"><?php echo displayAmount($subTotal + $shopConfig['shippingCost']); ?></td>
  </tr>
-  <tr>
+  <tr style="font-size:16px;">
   <td colspan="2" align="center"><a href="cart.php?action=view"> Go To Shopping 
    Cart </a></td>
  </tr>   
