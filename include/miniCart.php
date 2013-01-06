@@ -23,7 +23,7 @@ if ($numItem > 0) {
 		
 		$subTotal += $pd_price * $ct_qty;
 ?>
- <tr>
+ <tr style="font-size:14px;">
    <td><a href="<?php echo $url; ?>"><?php echo $pd_name; ?></a></td>
    
   <td width="30%" align="right"><?php echo displayAmount($ct_qty * $pd_price); ?></td>
@@ -31,30 +31,30 @@ if ($numItem > 0) {
 <?php
 	} // end while
 ?>
-  <tr><td align="right">Sub-total</td>
+  <tr><td align="right">Sub-total : </td>
   <td width="30%" align="right"><?php echo displayAmount($subTotal); ?></td>
  </tr>
-  <tr><td align="right">Shipping</td>
+  <tr><td align="right">Delivery Fee : </td>
   <td width="30%" align="right"><?php echo displayAmount($shopConfig['shippingCost']); ?></td>
  </tr>
-  <tr><td align="right">Total</td>
+  <tr><td align="right">Total : </td>
   <td width="30%" align="right"><?php echo displayAmount($subTotal + $shopConfig['shippingCost']); ?></td>
  </tr>
-  <tr><td colspan="2">&nbsp;</td></tr>
   <tr>
   <td colspan="2" align="center"><a href="cart.php?action=view"> Go To Shopping 
-   Cart</a></td>
+   Cart </a></td>
  </tr>   
 
 
 <?php	
 } else {
 ?>
-  <tr><td colspan="2" align="center" valign="middle">Shopping Cart Is Empty</td></tr>
+  <tr><td colspan="2" align="center" valign="middle">Shopping Cart Is Empty</td></tr>  
 <?php
 }
 ?> 
 
+  <tr><td colspan="2">&nbsp;</td></tr>
   <tr>
   <td colspan="2" align="center"><p align="center"><object width="250" height="200"><param name="movie" value="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3"></param>
 	<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/_2hxIJOeN7A?hl=zh_TW&amp;version=3" type="application/x-shockwave-flash" width="250" height="200" allowscriptaccess="always" allowfullscreen="true"></embed></object></p>
