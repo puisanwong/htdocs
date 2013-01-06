@@ -74,7 +74,7 @@ foreach ($categories as $category) {
 <li>
 <input type="button" id="search_btn" onclick="window.location='index.php?c= <?php echo $cid ?> &p=<?php echo $pid?>'" value="Search"/>
 <?php
- 
+ require_once("autocomplete/autoCompleteMain.php");
 ?>
 
 </li>
