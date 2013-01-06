@@ -72,14 +72,7 @@ foreach ($categories as $category) {
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
 </li>
 
-<li>
-<a href="<?php echo $url2; ?>"> Search</a>
-</li>
-<?php
-	require_once("autocomplete/autoCompleteMain.php");  
-	$url2  ="index.php?c=$cid";
 
-?>
 </ul>
 
 
