@@ -73,9 +73,13 @@ foreach ($categories as $category) {
 </li>
 
 <li>
-<input type="button">Search</intput>
+<a href="<?php echo $url2; ?>"> Search</a>
 </li>
+<?php
+	
+	$url2  ="index.php?c=$cid";
 
+?>
 </ul>
 
 
