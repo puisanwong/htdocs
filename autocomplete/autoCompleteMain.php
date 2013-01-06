@@ -1,8 +1,9 @@
 <?php
-$host="instance35319.db.xeround.com:3874"; // Host name
-$username="comp320"; // Mysql username
-$password="comp320"; // Mysql password
-$db_name="phpwebco_shop"; // Database name
+$host='instance35319.db.xeround.com:3874'; // Host name
+$username='comp320';// Mysql username
+$password='comp320'; // Mysql password
+$db_name='phpwebco_shop'; // Database name
+
 
 
 	$con = mysql_connect($host,$username,$password)   or die(mysql_error());
