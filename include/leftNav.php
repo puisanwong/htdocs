@@ -72,7 +72,9 @@ foreach ($categories as $category) {
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
 </li>
 
-
+<li>
+<input type="button">Search</intput>
+</li>
 
 </ul>
 
