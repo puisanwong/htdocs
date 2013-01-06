@@ -53,6 +53,6 @@ require_once $content;
   </tr>
 </table>
 <p>&nbsp;</p>
-<p align="center">Copyright &copy; 2005 - <?php echo date('Y'); ?> <a href="http://www.polyu.edu.hk"> http://www.polyu.edu.hk</a></p>
+<p align="center">Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.polyu.edu.hk"> http://www.polyu.edu.hk</a></p>
 </body>
 </html>
