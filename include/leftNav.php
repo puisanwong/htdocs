@@ -68,10 +68,11 @@ foreach ($categories as $category) {
      <a href="<?php echo WEB_ROOT; ?>admin/fb/index.php">Share with Friends</a>
 </li>
 <li><a href="<?php echo WEB_ROOT; ?>admin/index.php">Admin Login</a></li>
-<li>
-<label>Search Product: </label><input type="text" id="searchField" name="searchField">
-
+<li><a href="<?php echo $url; ?>">Search</a>	
 </li>
+  <?php 
+    $url   = $_SERVER['PHP_SELF'] . "?c=$cid";
+  ?>
 
 <li><button type="button" >Search</button></a></li>
 
