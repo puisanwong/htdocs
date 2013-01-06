@@ -34,7 +34,7 @@ for ($i = 0; $i < $n; $i++) {
 	  <a href="<?php echo WEB_ROOT; ?>admin/category/" class="leftnav">Category</a>
 	  <a href="<?php echo WEB_ROOT; ?>admin/product/" class="leftnav">Product</a> 
 	  <a href="<?php echo WEB_ROOT; ?>admin/order/?status=Paid" class="leftnav">Order</a> 
-	  <a href="<?php echo WEB_ROOT; ?>admin/config/" class="leftnav">Shop Config</a> 
+	  <a href="<?php echo WEB_ROOT; ?>admin/config/" class="leftnav">Shop Configuration</a> 
 	  <a href="<?php echo WEB_ROOT; ?>admin/user/" class="leftnav">User</a> 
 	  <a href="<?php echo $self; ?>?logout" class="leftnav">Logout</a>
       <p>&nbsp;</p>
@@ -53,6 +53,6 @@ require_once $content;
   </tr>
 </table>
 <p>&nbsp;</p>
-<p align="center">Copyright &copy; <?php echo date('Y'); ?> <a href="http://www.polyu.edu.hk"> http://www.polyu.edu.hk</a></p>
+<p align="center">Copyright &copy; <?php echo date('Y'); ?> <a href="http://cupcakecountry.orchestra.io/index.php"> Cupcake Country Online Shop</a></p>
 </body>
 </html>
