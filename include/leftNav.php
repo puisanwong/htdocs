@@ -71,7 +71,7 @@ foreach ($categories as $category) {
 <li><a href="<?php echo $url; ?>">Search</a>	
 </li>
   <?php
-   include 'autocomplete/autoCompleteMain.php'
+   include 'autocomplete/autoCompleteMain.php';
     $url   = $_SERVER['PHP_SELF'] . "?c=$cid";
   ?>
 
