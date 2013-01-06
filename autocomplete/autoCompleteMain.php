@@ -20,7 +20,6 @@ while($rs = mysql_fetch_array($rsd)) {
 	$cid= $rs['cat_id'];
 	$pid= $rs['pd_id'];	
 	echo "$cname\n";
-	$_Session['searchc'] = echo $cid;
-	$_Session['searchp'] = echo $pid;
+
 	}
 ?>
