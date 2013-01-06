@@ -1,4 +1,4 @@
-<p>&nbsp;</p>
-<p><small>&copy; 2005 MyOnlineShop&nbsp;</small></p>
+
+<p><small>&copy; 2013 Cupcake Country Online Shop</small></p>
 </body>
 </html>
