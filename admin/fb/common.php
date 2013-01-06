@@ -1,7 +1,7 @@
 <?php
 function mysqlc()
 {
-	$con=mysql_connect("localhost","root","");
+	$con=mysql_connect("instance35319.db.xeround.com:3874","comp320","comp320");
 	if(!$con)
 	{
 		die("Could not connect to MySQL");
