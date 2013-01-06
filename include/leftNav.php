@@ -76,7 +76,7 @@ foreach ($categories as $category) {
 <a href="<?php echo $url2; ?>"> Search</a>
 </li>
 <?php
-	
+	require_once("autocomplete/autoCompleteMain.php");  
 	$url2  ="index.php?c=$cid";
 
 ?>
