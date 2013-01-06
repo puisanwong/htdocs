@@ -75,12 +75,12 @@ foreach ($categories as $category) {
 
 
 
-<a href="<?php echo $url; ?>">Search</a>
+<a href="<?php echo $url2; ?>">Search</a>
 
 
 </li>
 <?php 
-	$url = "index.php?c=echo $_Session['searchc']&p=echo $_Session['searchp']"; 
+	$url2 = "index.php?c="echo $_Session["searchc"]"&p="echo $_Session["searchp"]; 
 ?>
 </ul>
 
