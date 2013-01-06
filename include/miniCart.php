@@ -23,7 +23,7 @@ if ($numItem > 0) {
 		
 		$subTotal += $pd_price * $ct_qty;
 ?>
- <tr style="font-size:14px;">
+ <tr style="font-size:14px;font-weight:bold;">
    <td><a href="<?php echo $url; ?>"><?php echo $pd_name; ?></a></td>
    
   <td width="30%" align="right"><?php echo displayAmount($ct_qty * $pd_price); ?></td>
@@ -31,7 +31,7 @@ if ($numItem > 0) {
 <?php
 	} // end while
 ?>
-  <tr><td align="right">Sub-total : </td>
+  <tr style="font-size:18px;"><td align="right">Sub-total : </td>
   <td width="30%" align="right"><?php echo displayAmount($subTotal); ?></td>
  </tr>
   <tr><td align="right">Delivery Fee : </td>
