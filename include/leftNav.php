@@ -70,7 +70,8 @@ foreach ($categories as $category) {
 <li><a href="<?php echo WEB_ROOT; ?>admin/index.php">Admin Login</a></li>
 <li><a href="<?php echo $url; ?>">Search</a>	
 </li>
-  <?php 
+  <?php
+   include 'autocomplete/autoCompleteMain.php'
     $url   = $_SERVER['PHP_SELF'] . "?c=$cid";
   ?>
 
