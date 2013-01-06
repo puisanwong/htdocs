@@ -125,7 +125,7 @@ for ($i = 0; $i < $numItem; $i++) {
         <td class="content"><?php echo $od_shipping_address1; ?> </td>
     </tr>
     <tr> 
-        <td width="150" class="label">Address2</td>
+        <td width="150" class="label">email</td>
         <td class="content"><?php echo $od_shipping_address2; ?> </td>
     </tr>
     <tr> 
