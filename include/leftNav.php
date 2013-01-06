@@ -71,7 +71,11 @@ foreach ($categories as $category) {
 <li>
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
 </li>
-<li><input type="button" id="search_btn" value="Search"/></li>
+<li>
+<!--<input type="button" id="search_btn" value="Search"/>-->
+<button type="button" onclick="window.location='index.php?c=12&p=1239'">Search</button>
+
+</li>
 
 </ul>
 
