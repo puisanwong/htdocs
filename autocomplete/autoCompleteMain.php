@@ -16,6 +16,8 @@ $sql = "SELECT pd_name,cat_id,pd_id FROM  tbl_product where pd_name LIKE '%$q%'"
 $rsd = mysql_query($sql);
 while($rs = mysql_fetch_array($rsd)) {
 	$cname = $rs['pd_name'];
+	$cid= $rs['cat_id'];
+	$pid= $rs['pd_id'];	
 	echo "$cname\n";
 }
 ?>
