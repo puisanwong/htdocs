@@ -74,7 +74,7 @@ foreach ($categories as $category) {
     $url   = $_SERVER['PHP_SELF'] . "?c=$cid";
   ?>
 
-<li><button type="button" >Search</button></a></li>
+
 
 </ul>
 
