@@ -72,7 +72,7 @@ foreach ($categories as $category) {
 </li>
   <?php
    include 'autocomplete/autoCompleteMain.php';
-    $url   = $_SERVER['PHP_SELF'] . "?c=$cid";
+    $url   = "index.php?c=$cid";
   ?>
 
 
