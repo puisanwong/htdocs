@@ -72,7 +72,7 @@ foreach ($categories as $category) {
 <label>Search Product: </label><input type="text" id="searchField" name="searchField">
 </li>
 <li>
-<input type="button" id="search_btn" onclick="window.location='index.php?c= <?php echo $cid ?> &p=<?php echo $pid?>'" value="Search"/>
+<input type="button" id="search_btn" onclick="window.location='index.php?c=12 &p=1235'" value="Search"/>
 <?php
  require_once("autocomplete/autoCompleteMain.php");
 ?>
