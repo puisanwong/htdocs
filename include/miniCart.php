@@ -11,8 +11,8 @@ $numItem = count($cartContent);
  <?php
 if ($numItem > 0) {
 ?>
- <tr>
-  <td colspan="2">Cart Content</td>
+ <tr style="background-color:blue;color:white;">
+  <th colspan="2" align="center" >Cart Content</th>
  </tr>
 <?php
 	$subTotal = 0;
