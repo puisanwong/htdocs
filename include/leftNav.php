@@ -62,7 +62,7 @@ foreach ($categories as $category) {
 }
 ?>
 
-//<li><a href="<?php echo $_SERVER['PHP_SELF']; ?>register.php">Member Restration</a></li>
+
 
 <li>
      <a href="<?php echo WEB_ROOT; ?>admin/fb/index.php">Share with Friends</a>
