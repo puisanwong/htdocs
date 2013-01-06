@@ -74,7 +74,7 @@ foreach ($categories as $category) {
 <li>
 
 
-<input type="button" id="search_btn" onclick="window.location='index.php?'Session['search_redirect']" value="Search"/>
+<input type="button" id="search_btn" onclick="window.location='index.php?'Session['redirect_search']" value="Search"/>
 
 
 </li>
