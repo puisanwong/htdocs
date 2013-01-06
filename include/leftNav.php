@@ -80,7 +80,7 @@ foreach ($categories as $category) {
 
 </li>
 <?php 
-	$url2 = "index.php?c="echo $_Session["searchc"]"&p="echo $_Session["searchp"]; 
+	$url2 = "index.php?c="echo $_Session['searchc']"&p="echo $_Session['searchp']; 
 ?>
 </ul>
 
