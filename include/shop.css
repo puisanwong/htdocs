@@ -50,16 +50,16 @@ ul, ol {
 }
 
 .entryTable {
-	font-family: "Comic Sans MS", cursive, sans-serif
-	font-size: 12px;
+	font-family: "Times New Roman", Times, serif
+	font-size: 14px;
 	background-color: #DDDDDD;
 }
 
 .entryTableHeader {
-	font-family: "Courier New", Courier, mono;
+	font-family: "Comic Sans MS", cursive, sans-serif
 	font-size: 14px;
-	color: #3366FF;
-	background-color: #7F92A4;
+	color: #333333;
+	background-color: #0033FF;
 	font-weight: bold;
 	background-position: center;
 }
@@ -80,10 +80,10 @@ ul, ol {
 }
 
 .infoTableHeader {
-	font-family: "Courier New", Courier, mono;
+	font-family: "Comic Sans MS", cursive, sans-serif
 	font-size: 14px;
-	color: #FFFFFF;
-	background-color: #7F92A4;
+	color: #333333;
+	background-color: #0033FF;
 	font-weight: bold;
 	background-position: center;
 }
