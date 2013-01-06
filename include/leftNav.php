@@ -74,11 +74,14 @@ foreach ($categories as $category) {
 <li>
 
 
-<input type="button" id="search_btn" value="Search"/>
+
+<a href="<?php echo $url; ?>">Search</a>
 
 
 </li>
-
+<?php 
+	$url = "index.php?c=echo $_Session['searchc']&p=echo $_Session['searchp']"; 
+?>
 </ul>
 
 
