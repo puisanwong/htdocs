@@ -12,6 +12,7 @@ function checkUser()
 		header('Location: ' . WEB_ROOT . 'admin/login.php');
 		exit;
 	}
+	
 	/*
 	if (isset($_SESSION['id'])) {
 // Redirection to login page twitter or facebook
@@ -114,7 +115,8 @@ function doLogout()
 	Generate combo box options containing the categories we have.
 	if $catId is set then that category is selected
 */
-function buildCategoryOptions($catId = 0)
+
+/* function buildCategoryOptions($catId = 0)
 {
 	$sql = "SELECT cat_id, cat_parent_id, cat_name
 			FROM tbl_category
@@ -156,12 +158,8 @@ function buildCategoryOptions($catId = 0)
 	
 	return $list;
 }
-
-/*
-	If you want to be able to add products to the first level category
-	replace the above function with the one below
 */
-/*
+
 
 function buildCategoryOptions($catId = 0)
 {
@@ -208,7 +206,8 @@ function buildCategoryOptions($catId = 0)
 	
 	return $list;
 }
-*/
+
+
 
 /*
 	Create a thumbnail of $srcFile and save it to $destFile.
