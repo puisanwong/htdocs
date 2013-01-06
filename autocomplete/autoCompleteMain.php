@@ -12,7 +12,7 @@ $db_name='phpwebco_shop'; // Database name
 $q = strtolower($_GET["q"]);
 if (!$q) return;
 
-$sql = "SELECT pd_name FROM  tbl_product where pd_name LIKE '%$q%'";
+$sql = "SELECT pd_name,cat_id,pd_id FROM  tbl_product where pd_name LIKE '%$q%'";
 $rsd = mysql_query($sql);
 while($rs = mysql_fetch_array($rsd)) {
 	$cname = $rs['pd_name'];
