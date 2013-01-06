@@ -18,11 +18,7 @@ matchContains: true,
 selectFirst: false
 });
 
-$('#searchField').result(function(event, data, formatted){
-required_once('autocomplete/autoCompleteMain.php');
-location.href ="index.php?c=$cid&p=$pid";
 
-});
 });
 </script>
   </head>
