@@ -20,5 +20,6 @@ while($rs = mysql_fetch_array($rsd)) {
 	$cid= $rs['cat_id'];
 	$pid= $rs['pd_id'];	
 	echo "$cname\n";
+	$_SESSION['redirect_search'] = echo $cid "&p=" echo $pid;
 }
 ?>
