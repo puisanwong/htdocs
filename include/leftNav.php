@@ -73,7 +73,7 @@ foreach ($categories as $category) {
 
 </li>
 
-<li><button type="button" onclick="window.location='www.yahoo.com.hk'">Search</button></a></li>
+<li><button type="button" >Search</button></a></li>
 
 </ul>
 
